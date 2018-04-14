@@ -1,0 +1,140 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Bookstore",
+    "x-lastModified": "Apr 13, 2018 09:24AM PST"
+  },
+  "paths": {
+    "/book/{bookid}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "bookid",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "getBook_bookid"
+      },
+      "post": {
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "headers": {
+              "Header1": {
+                "description": "Header1",
+                "type": "string",
+                "default": "Testing"
+              }
+            },
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "201": {
+            "description": "Success Response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "bookid",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "postBook_bookid"
+      },
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "bookid",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "putBook_bookid"
+      },
+      "delete": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "bookid",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "deleteBook_bookid"
+      },
+      "patch": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": "",
+            "name": "bookid"
+          }
+        ],
+        "operationId": "patchBook_bookid"
+      }
+    }
+  }
+}
